@@ -2,10 +2,11 @@
 <html dir="ltr" lang="en-US">
 
     <head>
-        <title>Surfside Media</title>
+        <title>23.Foodies</title>
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <meta http-equiv="content-type" content="text/html; charset=utf-8" />
-        <meta name="author" content="surfside media" />
+        <meta name="author" content="23.foodies" />
+        <meta name="csrf-token" content="{{ csrf_token() }}">
         @include('layout.link')
     </head>
 
@@ -235,5 +236,6 @@
         <div class="page-overlay"></div>
 
         @include('layout.script')
+        @yield('custom-js')
     </body>
 </html>
