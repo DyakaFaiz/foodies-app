@@ -142,11 +142,6 @@
             </div>
 
             <div class="wg-box mt-5 text-right">
-            {{-- <form action="http://localhost:8000/account-order/cancel-order" method="POST">
-                <input type="hidden" name="_token" value="3v611ELheIo6fqsgspMOk0eiSZjncEeubOwUa6YT" autocomplete="off">
-                <input type="hidden" name="_method" value="PUT"> <input type="hidden" name="order_id" value="1">
-                <button type="submit" class="btn btn-danger">Cancel Order</button>
-            </form> --}}
             </div>
         </div>
 

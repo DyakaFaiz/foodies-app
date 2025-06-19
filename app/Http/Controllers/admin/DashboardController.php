@@ -33,6 +33,10 @@ class DashboardController extends Controller
 
         $semuaOrder = DB::table('pesanan')->count();
         $totalOrder = DB::table('pesanan')->sum('total');
+
+        $pesananDiprosess = DB::table('pesanan')->whereIn('status', [1,2])->count();
+        $totalPesananDiproses = DB::table('pesanan')->whereIn('status', [1,2])->sum('total');
+
         $orderTerkirim = DB::table('pesanan')->where('status', 3)->count();
         $totalOrderTerkirim = DB::table('pesanan')->where('status', 3)->sum('total');
 
@@ -75,6 +79,8 @@ class DashboardController extends Controller
             'produk'    => $produk,
             'pesanan'    => $pesanan,
             'semuaOrder'    => $semuaOrder,
+            'pesananDiprosess'    => $pesananDiprosess,
+            'totalPesananDiproses'    => $totalPesananDiproses,
             'totalOrder'    => $totalOrder,
             'orderTerkirim'    => $orderTerkirim,
             'totalOrderTerkirim'    => $totalOrderTerkirim,

@@ -13,7 +13,7 @@ class DashboardController extends Controller
 {
     public function index()
     {
-        Session::put('device', 0);
+        Session::put('device', 1);
         
         $profil = DB::table('profil')->first();
 

@@ -21,6 +21,20 @@
                         </div>
                     </div>
 
+                    <div class="wg-chart-default mb-20">
+                        <div class="flex items-center justify-between">
+                            <div class="flex items-center gap14">
+                                <div class="image ic-bg">
+                                    <i class="icon-shopping-bag"></i>
+                                </div>
+                                <div>
+                                    <div class="body-text mb-2">Total Pesanan Diproses</div>
+                                    <h4>{{ $pesananDiprosess }}</h4>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
 
                     <div class="wg-chart-default mb-20">
                         <div class="flex items-center justify-between">
@@ -64,6 +78,20 @@
                                 <div>
                                     <div class="body-text mb-2">Jumlah Total</div>
                                     <h4>{{ number_format($totalOrder, 0, ',', '.') }}</h4>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="wg-chart-default mb-20">
+                        <div class="flex items-center justify-between">
+                            <div class="flex items-center gap14">
+                                <div class="image ic-bg">
+                                    <i class="icon-dollar-sign"></i>
+                                </div>
+                                <div>
+                                    <div class="body-text mb-2">Jumlah Total Pesanan Diproses</div>
+                                    <h4>{{ number_format($totalPesananDiproses, 0, ',', '.') }}</h4>
                                 </div>
                             </div>
                         </div>

@@ -10,6 +10,8 @@
           </a>
         </div> --}}
 
+        <h6 class="fw-bold">23.Foodies</h6>
+
         <nav class="navigation">
           <ul class="navigation__list list-unstyled d-flex">
             <li class="navigation__item">
